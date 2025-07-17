@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Complete project proposal",
+      "description": "Draft and finalize the Q3 marketing campaign proposal including budget allocation and timeline",
+      "status": "in_progress"
+    },
+    {
+      "id": 2,
+      "title": "Review team performance metrics",
+      "description": "Analyze monthly KPIs and prepare feedback reports for team members",
+      "status": "pending"
+    },
+    {
+      "id": 3,
+      "title": "Update website content",
+      "description": "Refresh product descriptions and add new testimonials to the company website",
+      "status": "completed"
+    },
+    {
+      "id": 4,
+      "title": "Schedule client meeting",
+      "description": "Coordinate with ABC Corp for quarterly review meeting and prepare presentation materials",
+      "status": "pending"
+    },
+    {
+      "id": 5,
+      "title": "Organize team building event",
+      "description": "Plan and book venue for monthly team building activity, send invitations to all staff",
+      "status": "in_progress"
+    },
+    {
+      "id": 6,
+      "title": "Submit expense reports",
+      "description": "Compile and submit all business expense receipts from the past month",
+      "status": "completed"
+    }
+  ]
+}
