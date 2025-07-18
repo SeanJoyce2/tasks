@@ -63,6 +63,11 @@ function App() {
         localStorage.setItem("tasks", JSON.stringify(updatedTasks))
     }
 
+    const handleDeleteTask = (task) => {
+        const updatedTasks = [...tasks].filter(t => t.id !== task.id)
+        handleUpdateTasks(updatedTasks)
+    }
+
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-100">
 
@@ -77,18 +82,21 @@ function App() {
                     <TaskColumn
                         onIncreaseTask={handleIncreaseTask}
                         onDecreaseTask={handleDecreaseTask}
+                        onDeleteTask={handleDeleteTask}
                         title="Pending"
                         tasks={pendingTasks}
                     />
                     <TaskColumn
                         onIncreaseTask={handleIncreaseTask}
                         onDecreaseTask={handleDecreaseTask}
+                        onDeleteTask={handleDeleteTask}
                         title="In Progress"
                         tasks={inProgressTasks}
                     />
                     <TaskColumn
                         onIncreaseTask={handleIncreaseTask}
                         onDecreaseTask={handleDecreaseTask}
+                        onDeleteTask={handleDeleteTask}
                         title="Completed"
                         tasks={completedTasks}
                     />

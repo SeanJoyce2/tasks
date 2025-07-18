@@ -47,14 +47,14 @@ const CreateTaskDialog = ({onSubmit, isOpen, dialogRef}) => {
                 onSubmit={handleFormSubmit}
                 className="flex flex-col gap-4 p-6"
             >
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">Create New Task</h3>
+                <h3 className="text-xl font-semibold text-neutral-800 mb-2">Create New Task</h3>
 
                 <div className="flex flex-col gap-2">
-                    <label className="text-sm font-medium text-gray-700">Title *</label>
+                    <label className="text-sm font-medium text-neutral-700">Title *</label>
                     <input
                         placeholder="Enter task title..."
                         required
-                        className="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                        className="border border-neutral-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
                         type="text"
                         value={title}
                         onChange={(e) => setTitle(e.target.value)}
@@ -62,11 +62,11 @@ const CreateTaskDialog = ({onSubmit, isOpen, dialogRef}) => {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                    <label className="text-sm font-medium text-gray-700">Description *</label>
+                    <label className="text-sm font-medium text-neutral-700">Description *</label>
                     <textarea
                         placeholder="Enter task description..."
                         required
-                        className="border border-gray-300 rounded-md px-3 py-2 h-24 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                        className="border border-neutral-300 rounded-md px-3 py-2 h-24 resize-none focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
                     />
@@ -76,13 +76,13 @@ const CreateTaskDialog = ({onSubmit, isOpen, dialogRef}) => {
                     <button
                         type="button"
                         onClick={() => dialogRef.current?.close()}
-                        className="flex-1 px-4 py-2 text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors font-medium"
+                        className="flex-1 px-4 py-2 text-neutral-700 bg-neutral-100 hover:bg-neutral-200 rounded-md transition-colors font-medium"
                     >
                         Cancel
                     </button>
                     <button
                         type="submit"
-                        className="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-colors font-medium"
+                        className="flex-1 px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-md transition-colors font-medium"
                     >
                         Add Task
                     </button>

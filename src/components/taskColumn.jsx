@@ -1,6 +1,6 @@
 import TaskCard from "./taskCard.jsx";
 
-const TaskColumn = ({tasks, title, onDecreaseTask, onIncreaseTask}) => {
+const TaskColumn = ({tasks, title, onDecreaseTask, onIncreaseTask, onDeleteTask}) => {
     return (
         <div className="bg-white border border-gray-200 shadow-sm rounded-xl p-4 min-h-[400px] flex flex-col">
             <h3 className="text-xl font-semibold text-gray-800 mb-4 pb-3 border-b border-gray-100">
@@ -11,6 +11,7 @@ const TaskColumn = ({tasks, title, onDecreaseTask, onIncreaseTask}) => {
                     <TaskCard
                         onIncreaseTask={onIncreaseTask}
                         onDecreaseTask={onDecreaseTask}
+                        onDeleteTask={onDeleteTask}
                         task={task}
                         key={task.id}
                     />
