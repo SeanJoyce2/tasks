@@ -1,5 +1,6 @@
 import {useLayoutEffect, useState} from "react";
 import {v4 as uuidv4} from 'uuid';
+import Status from "../types/status.js";
 
 const CreateTaskDialog = ({onSubmit, isOpen, dialogRef}) => {
 
@@ -28,7 +29,7 @@ const CreateTaskDialog = ({onSubmit, isOpen, dialogRef}) => {
             id: uuidv4(),
             title,
             description,
-            status: "pending"
+            status: Status.PENDING
         })
         setTitle("")
         setDescription("")
